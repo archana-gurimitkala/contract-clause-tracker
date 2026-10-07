@@ -1,7 +1,17 @@
 import html
+import os
 from urllib.parse import quote
 
 import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv()
+try:
+    for key in ("OPENAI_API_KEY", "OPENROUTER_API_KEY"):
+        if key in st.secrets:
+            os.environ[key] = st.secrets[key]
+except Exception:
+    pass
 
 import dashboard
 import memo

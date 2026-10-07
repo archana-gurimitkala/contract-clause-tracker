@@ -1,0 +1,97 @@
+{
+  "contract_name": "sample_nda.pdf",
+  "saved_at": "20261007_111537",
+  "model": "gpt-4o",
+  "result": {
+    "contract_type_guess": "NDA",
+    "clauses": {
+      "termination": {
+        "found": true,
+        "quote": "Either Party may terminate this Agreement for convenience upon thirty (30) days' prior written notice to the other Party.",
+        "summary_legal": "Either party can terminate the agreement for convenience with 30 days' notice.",
+        "summary_plain": "You can end the agreement for any reason by giving 30 days' notice.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      },
+      "auto_renewal": {
+        "found": true,
+        "quote": "This Agreement shall remain in effect for an initial term of one (1) year from the Effective Date (i.e., through February 28, 2027), after which it renews automatically unless cancelled in advance.",
+        "summary_legal": "The agreement auto-renews after one year unless cancelled beforehand.",
+        "summary_plain": "The contract will automatically renew each year unless you cancel it before the end of the term.",
+        "flagged": true,
+        "flag_reason_legal": "The auto-renewal clause lacks a clear opt-out notice period, making it easy to miss the cancellation deadline.",
+        "flag_reason_plain": "There's no specific time frame mentioned for when you need to cancel to avoid automatic renewal, which could lead to unwanted extensions.",
+        "suggested_redline": "This Agreement shall automatically renew for successive one (1) year terms unless either Party provides written notice of non-renewal at least forty-five (45) days prior to the end of the then-current term."
+      },
+      "confidentiality": {
+        "found": true,
+        "quote": "All information shared between the Parties, in any form, shall remain confidential indefinitely, with no exceptions.",
+        "summary_legal": "All shared information is confidential indefinitely, with no carve-outs.",
+        "summary_plain": "Everything shared is confidential forever, with no exceptions.",
+        "flagged": true,
+        "flag_reason_legal": "The confidentiality clause lacks standard carve-outs and applies indefinitely to all information, not just trade secrets.",
+        "flag_reason_plain": "The clause says everything is secret forever, even if it's public or you already knew it, which is hard to manage.",
+        "suggested_redline": "Confidential Information excludes information that is or becomes publicly available through no fault of the receiving Party, was already known prior to disclosure, or is independently developed without use of the disclosing Party's Confidential Information. Obligations survive for three (3) years following termination."
+      },
+      "indemnification": {
+        "found": true,
+        "quote": "Each Party shall indemnify the other against third-party claims arising from such Party's breach of this Agreement, negligence, or willful misconduct, subject to the limitation of liability in Section 5.",
+        "summary_legal": "Mutual indemnification for breaches, negligence, or willful misconduct, limited by Section 5.",
+        "summary_plain": "Both parties agree to cover each other for certain claims, but there's a limit on how much they have to pay.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      },
+      "limitation_of_liability": {
+        "found": true,
+        "quote": "Vendor's total liability under this Agreement shall not exceed $500, regardless of the nature of the claim.",
+        "summary_legal": "Vendor's liability is capped at $500 for any claim.",
+        "summary_plain": "The most the Vendor would have to pay for any issue is $500.",
+        "flagged": true,
+        "flag_reason_legal": "The liability cap is set unusually low at $500, which may not cover potential damages adequately.",
+        "flag_reason_plain": "The limit on what the Vendor has to pay is very low, which might not be enough if something goes wrong.",
+        "suggested_redline": "Neither Party's aggregate liability under this Agreement shall exceed the total fees paid in the twelve (12) months preceding the claim. Neither Party shall be liable for indirect, incidental, or consequential damages."
+      },
+      "governing_law": {
+        "found": true,
+        "quote": "This Agreement shall be governed by the laws of the State of Delaware, and the Parties consent to the exclusive jurisdiction of the courts located in Delaware.",
+        "summary_legal": "Delaware law governs, and disputes are resolved in Delaware courts.",
+        "summary_plain": "If there's a dispute, it will be handled under Delaware law in Delaware courts.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      },
+      "payment_terms": {
+        "found": false,
+        "quote": null,
+        "summary_legal": null,
+        "summary_plain": null,
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      }
+    },
+    "dates": {
+      "effective_date": {
+        "found": true,
+        "date": "2026-03-01",
+        "quote": "This Mutual Non-Disclosure Agreement (the \"Agreement\") is entered into as of March 1, 2026 (the \"Effective Date\")"
+      },
+      "renewal_date": {
+        "found": true,
+        "date": "2027-02-28",
+        "quote": "This Agreement shall remain in effect for an initial term of one (1) year from the Effective Date (i.e., through February 28, 2027), after which it renews automatically unless cancelled in advance."
+      },
+      "termination_notice_deadline": {
+        "found": false,
+        "date": null,
+        "quote": null
+      }
+    }
+  }
+}

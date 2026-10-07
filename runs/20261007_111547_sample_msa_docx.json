@@ -1,0 +1,97 @@
+{
+  "contract_name": "sample_msa.docx",
+  "saved_at": "20261007_111547",
+  "model": "gpt-4o",
+  "result": {
+    "contract_type_guess": "MSA",
+    "clauses": {
+      "termination": {
+        "found": true,
+        "quote": "Company may terminate this Agreement at any time without notice or cause. Vendor may not terminate except for Company's material breach.",
+        "summary_legal": "The Company can terminate the agreement at any time without notice, while the Vendor can only terminate for the Company's material breach.",
+        "summary_plain": "The Company can end the contract whenever they want, but the Vendor can only end it if the Company seriously messes up.",
+        "flagged": true,
+        "flag_reason_legal": "The termination clause is one-sided, allowing only the Company to terminate for convenience, which heavily favors the Company and limits the Vendor's exit options.",
+        "flag_reason_plain": "This clause is risky because it lets the Company end the contract whenever they want, but the Vendor can't do the same unless the Company does something seriously wrong.",
+        "suggested_redline": "Either Party may terminate this Agreement for convenience upon sixty (60) days' prior written notice to the other Party."
+      },
+      "auto_renewal": {
+        "found": true,
+        "quote": "This Agreement commences on the Effective Date and continues for an initial term of one (1) year, renewing automatically thereafter for successive one (1) year terms (next renewal on January 15, 2027) unless either Party provides written notice of non-renewal at least forty-five (45) days prior to the end of the then-current term (i.e., no later than November 30, 2026).",
+        "summary_legal": "The agreement automatically renews for one-year terms unless either party gives a 45-day notice before the term ends.",
+        "summary_plain": "The contract renews every year unless you tell the other party 45 days before the end of the year that you don't want to renew.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      },
+      "confidentiality": {
+        "found": true,
+        "quote": "Confidential Information excludes information that is or becomes publicly available through no fault of the receiving Party, was already known prior to disclosure, or is independently developed without use of the disclosing Party's Confidential Information. Obligations survive for three (3) years following termination.",
+        "summary_legal": "Confidential information is well-defined with standard carve-outs, and obligations last for three years post-termination.",
+        "summary_plain": "The contract clearly states what isn't confidential and keeps confidentiality for three years after the contract ends.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      },
+      "indemnification": {
+        "found": true,
+        "quote": "Vendor shall indemnify, defend, and hold harmless Company from any and all claims, damages, and liabilities of any kind whatsoever, without limitation.",
+        "summary_legal": "The Vendor must indemnify the Company for all claims and damages without any limitation.",
+        "summary_plain": "The Vendor has to cover any claims or damages against the Company, no matter what.",
+        "flagged": true,
+        "flag_reason_legal": "The indemnification clause is one-sided, requiring only the Vendor to indemnify the Company, which creates an unbalanced risk allocation.",
+        "flag_reason_plain": "This is risky because it makes the Vendor responsible for all claims against the Company, which isn't fair.",
+        "suggested_redline": "Each Party shall indemnify the other against third-party claims arising from such Party's breach of this Agreement, negligence, or willful misconduct."
+      },
+      "limitation_of_liability": {
+        "found": true,
+        "quote": "Neither Party's aggregate liability under this Agreement shall exceed the total fees paid in the twelve (12) months preceding the claim. Neither Party shall be liable for indirect, incidental, or consequential damages.",
+        "summary_legal": "Liability is capped at fees paid in the prior 12 months, with mutual exclusion of indirect damages.",
+        "summary_plain": "If something goes wrong, neither side can be held responsible for more than what was paid in the last year, and they can't be blamed for indirect damages.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      },
+      "governing_law": {
+        "found": true,
+        "quote": "This Agreement is governed by the laws of the Cayman Islands, and all disputes must be resolved exclusively in that jurisdiction.",
+        "summary_legal": "The contract is governed by Cayman Islands law, with disputes resolved there exclusively.",
+        "summary_plain": "If there's a dispute, it has to be handled under Cayman Islands law and in their courts.",
+        "flagged": true,
+        "flag_reason_legal": "The governing law and jurisdiction are set in the Cayman Islands, which may have no connection to either party and could favor one side.",
+        "flag_reason_plain": "This is risky because it forces disputes to be handled in the Cayman Islands, which might be inconvenient or unfamiliar.",
+        "suggested_redline": "This Agreement shall be governed by the laws of the State of Delaware, and the Parties consent to the exclusive jurisdiction of the courts located in Delaware."
+      },
+      "payment_terms": {
+        "found": true,
+        "quote": "Invoices are due within thirty (30) days of receipt. Late payments accrue interest at 1.5% per month or the maximum rate permitted by law, whichever is lower.",
+        "summary_legal": "Payments are due within 30 days, with a late fee of 1.5% per month or the legal maximum.",
+        "summary_plain": "You have 30 days to pay invoices, and if you're late, there's a 1.5% monthly interest charge.",
+        "flagged": false,
+        "flag_reason_legal": null,
+        "flag_reason_plain": null,
+        "suggested_redline": null
+      }
+    },
+    "dates": {
+      "effective_date": {
+        "found": true,
+        "date": "2026-01-15",
+        "quote": "This Master Services Agreement (the \"Agreement\") is entered into as of January 15, 2026 (the \"Effective Date\")"
+      },
+      "renewal_date": {
+        "found": true,
+        "date": "2027-01-15",
+        "quote": "renewing automatically thereafter for successive one (1) year terms (next renewal on January 15, 2027)"
+      },
+      "termination_notice_deadline": {
+        "found": true,
+        "date": "2026-11-30",
+        "quote": "unless either Party provides written notice of non-renewal at least forty-five (45) days prior to the end of the then-current term (i.e., no later than November 30, 2026)"
+      }
+    }
+  }
+}

@@ -4,3 +4,4 @@ pdfplumber
 python-docx
 fpdf2
 python-dateutil
+python-dotenv
