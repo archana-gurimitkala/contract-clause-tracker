@@ -1,0 +1,100 @@
+REAL CONTRACTS COLLECTED FROM SEC EDGAR (PUBLIC FILINGS)
+==========================================================
+These are excerpts of real, publicly-filed executed contracts, pulled from
+SEC EDGAR exhibits (material contracts attached to public company filings).
+They are public record — not privileged client data. Quotes below are verbatim
+from the filed documents; sections not quoted were not located or not present
+in the exhibit.
+
+
+==========================================================
+CONTRACT 1: MASTER SERVICES AGREEMENT
+==========================================================
+Source: Aspira Women's Health, Inc. — 8-K exhibit EX-10.1
+Filed: 2025-09-03
+Parties: Hungerford Consulting LLC d/b/a H4D Consulting ("Consultant") and
+         Aspira Women's Health, Inc. ("Client")
+SEC URL: https://www.sec.gov/Archives/edgar/data/926617/000164117225026441/ex10-1.htm
+
+--- Opening ---
+"MASTER SERVICES AGREEMENT Number ASP0001 (this "Agreement") is dated to be
+effective as of September 2, 2025, (the "Effective Date"), by and between
+Hungerford Consulting LLC d/b/a H4D Consulting (hereinafter "Consultant")...
+and Aspira Women's Health, Inc (hereinafter "Client,"..."
+
+--- Termination (Section 3) ---
+"This Agreement shall commence on the Effective Date and shall, unless
+terminated sooner in accordance with the terms of this Agreement or extended
+by agreement between the Parties, expire one (1) year after the date upon
+which all Statements of Work have either expired or been completed..."
+
+--- Auto-Renewal ---
+Not present — the agreement expires one year after completion of all
+Statements of Work with no automatic renewal mechanism. (Useful real-world
+test case for correctly reporting "not found" rather than guessing.)
+
+--- Confidentiality (Section 9) ---
+"The Receiving Party agrees not to use any Confidential Information of the
+Disclosing Party for any purpose except in connection with business
+relationship and services provided by and between the Parties."
+
+--- Indemnification (Section 7) ---
+"Consultant agrees to defend, indemnify, and hold Client, its owners,
+directors, officers, employees and agents harmless from any and all third
+party demands, claims, actions, suits, proceedings, costs, expenses, damages
+and liabilities..."
+
+--- Limitation of Liability ---
+Not present in this agreement. (Another real "not found" case.)
+
+--- Governing Law (Section 18) ---
+"THIS AGREEMENT...SHALL IN ALL RESPECTS BE GOVERNED BY AND INTERPRETED,
+CONSTRUED, AND DETERMINED IN ACCORDANCE WITH, THE APPLICABLE PROVISIONS OF
+THE INTERNAL LAWS OF THE STATE OF TEXAS..."
+
+--- Payment Terms (Section 4) ---
+"Invoices will be submitted semi-monthly on the 15th and 30th of each month
+in US Dollars (USD) and payment shall be remitted in USD by ACH...Invoices
+shall be payable within five (5) days of receipt."
+
+
+==========================================================
+CONTRACT 2: NON-COMPETITION, NON-SOLICITATION AND NON-DISCLOSURE AGREEMENT
+==========================================================
+Source: LSI Industries Inc. — 8-K exhibit EX-10.2
+Filed: 2017-02-27
+Parties: LSI Industries Inc. ("LSI") and Dennis W. Wells ("Executive")
+SEC URL: https://www.sec.gov/Archives/edgar/data/763532/000089225117000038/form8k022717_ex10-2.htm
+
+Note: this is an executive non-compete/non-disclosure agreement (individual,
+not a business-to-business mutual NDA) — included because it's a real,
+clean, publicly-filed example, but it stresses the tool differently than a
+standard commercial NDA (no payment terms, no limitation-of-liability
+section, by design).
+
+--- Opening ---
+"This Non-Competition, Non-Solicitation and Non-Disclosure Agreement (this
+"Agreement") is made this 24th day of February, 2017, by and among LSI
+Industries Inc., an Ohio corporation ("LSI") and Dennis W. Wells
+("Executive")."
+
+--- Confidentiality Scope ---
+Covers "trade secrets, proprietary data and confidential information related
+to the Business" including customer lists, research programs, financial
+information, pricing methods, and intellectual property arrangements.
+
+--- Indemnification ---
+"LSI agrees to indemnify and hold Executive harmless from and against his
+refusal to submit to a demand to disclose such Restricted Information and
+all fees, costs, or expenses incurred by him (including reasonable
+attorneys fees and disbursements)."
+
+--- Limitation of Liability ---
+Not present in this document.
+
+--- Governing Law ---
+"This Agreement shall be construed in accordance with, and the rights of the
+parties shall be governed by, the laws of the State of Ohio."
+
+--- Payment Terms ---
+Not present in this document (expected — not a commercial services contract).

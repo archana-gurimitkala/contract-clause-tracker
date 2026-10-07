@@ -1,0 +1,147 @@
+DEMO SCRIPT — Contract Clause Extractor & Risk/Renewal Tracker
+For: screen recording to send to Andrew
+Total runtime: ~3.5 minutes at a natural pace (cuttable sections marked)
+
+====================================================================
+1. OPENING (10 sec)
+====================================================================
+"Hi Andrew — after our conversation, I wanted to show you something
+rather than just talk about it. This is a Contract Clause Extractor
+and Risk Tracker — upload a contract, it pulls out the key clauses,
+checks them against a legal playbook, flags anything risky, drafts
+fixes, and tracks renewal deadlines across your whole portfolio.
+Let me walk through the whole thing."
+
+====================================================================
+2. HOW I BUILT IT (15 sec) — simple, plain terms
+====================================================================
+"Quick note on how I built this — I used Claude Code, Anthropic's AI
+coding assistant, to actually write, test, and fix the code with me,
+back and forth, the same way I'd work with a developer. I think
+you'll appreciate that part especially.
+
+Separately — for the contract analysis itself, inside the app — I
+did consider using Claude's API too, but it's pricier per contract,
+so for this build I went with OpenAI's models instead. That's part
+of why I wanted to show you the cost comparison coming up."
+
+====================================================================
+3. UPLOAD & FIRST LOOK (15 sec)
+====================================================================
+"I'll upload this one — actually a real Master Services Agreement,
+pulled straight from a public SEC filing, not something I wrote
+myself. [upload sidebar, pick model, click Analyze Contract] It runs
+through the extraction now — one API call per contract."
+
+====================================================================
+4. RISK SCORE & KEY DATES (15 sec)
+====================================================================
+"Right at the top: a Risk Score — 0 to 100, color-coded, a quick
+triage signal before anyone reads the details. Below that, the key
+dates it pulled out — effective date, renewal date, termination
+notice deadline — each one with the exact quoted text it came from,
+so nothing here is guessed."
+
+====================================================================
+5. CLAUSE CARDS + SUGGESTED REDLINE (20 sec)
+====================================================================
+"Clauses are sorted flagged-first, so the risky stuff is what you
+see immediately, not buried alphabetically. Here's indemnification,
+flagged as one-sided — and right below the reason, a suggested
+replacement clause, drafted from the playbook's acceptable language.
+So it's not just flagging problems, it's proposing the fix."
+
+====================================================================
+6. LAWYER / PLAIN-ENGLISH TOGGLE  <-- sell this one hardest (15 sec)
+====================================================================
+"This part ties directly to what you said the job actually is —
+translating for non-technical people. [flip the toggle] Same exact
+analysis, but in Plain-English mode it reads like something you'd
+hand a client with zero legal background. Flip back to Legal mode
+and it's precise, citation-style language for internal counsel."
+
+====================================================================
+7. MEMO EXPORT (10 sec) — cuttable if short on time
+====================================================================
+"One click generates an actual Word memo — risk score, flagged
+issues, suggested redlines, a disclaimer — something you could send
+to a client instead of screen-sharing a dashboard. [click Download,
+briefly show the opened doc]"
+
+====================================================================
+8. DASHBOARD — KPIs (10 sec)
+====================================================================
+"Switching to the dashboard. These tiles track every contract I've
+uploaded by urgency — overdue, due in 30/60/90 days — across the
+whole portfolio, not just one document."
+
+====================================================================
+9. ASK YOUR PORTFOLIO (15 sec)
+====================================================================
+"I can ask it questions in plain English across everything I've
+uploaded — [type a query like 'which contracts have no limitation of
+liability clause'] — and it checks every saved contract and tells me
+which ones match, with the reasoning."
+
+====================================================================
+10. UPCOMING DEADLINES + RENEWAL EMAIL (20 sec)
+====================================================================
+"Below that, every upcoming deadline across all contracts. And for
+any of these, [pick one from the dropdown] it drafts a renewal
+action email — subject and body already written — and [click Open
+in Email App] this opens it directly in my own email app, ready to
+review and send. I didn't want the AI actually sending emails on its
+own — that stays a human decision — but it gets you from 'deadline
+noticed' to 'email drafted and ready' in one click."
+
+====================================================================
+11. PORTFOLIO HEAT-MAP (10 sec) — cuttable if short on time
+====================================================================
+"And at the bottom, a heat-map — every contract against every clause
+type, color-coded — so if I'm managing a dozen vendor contracts, I
+can see at a glance which ones have problems and where."
+
+====================================================================
+12. THE COST/TRUST MOMENT  <-- NEVER CUT THIS (30 sec)
+====================================================================
+"This is the part I actually wanted your take on. Quick plain-terms
+explainer first: there are two 'brains' this can run on. GPT-4o-mini
+is the smaller, cheaper, faster version — think of it as skimming
+the contract. GPT-4o is the full-size version — it reads everything
+more carefully, but costs more per contract.
+
+[switch model to gpt-4o-mini, re-analyze the same contract] I ran
+this exact same contract through the mini model five separate times
+— and it missed a real red flag every single time. [switch to
+gpt-4o, re-analyze] The full model caught it every time, same
+contract, same code — only the model changed.
+
+So the tool lets you choose, live, and I think that's the real
+decision every client-facing build like this comes down to: cost
+versus trust."
+
+====================================================================
+13. CLOSE (15 sec)
+====================================================================
+"This can also be extended to run on Claude's API directly, or on
+OpenRouter for open-source models — more options to compare cost and
+trust depending on what a client actually needs.
+
+It's live at [Hugging Face link] if you want to try it on one of
+your own documents. Let me know what you think."
+
+====================================================================
+NOTES
+====================================================================
+- Say "public SEC filing" plainly when it comes up — real
+  credibility point, don't rush it.
+- The "Open in Email App" line explaining WHY you didn't let AI
+  auto-send is worth keeping verbatim — it's a trust signal, not a
+  limitation.
+- Section 12 (model comparison) is the single most differentiated
+  moment — never cut that one. Andrew already name-checked Claude
+  and "asking Claude" in your interview conversation, so the
+  Claude Code mention in section 2 should land well with him
+  specifically.
+- Swap [Hugging Face link] once deployed — get the real URL before
+  recording the final take.

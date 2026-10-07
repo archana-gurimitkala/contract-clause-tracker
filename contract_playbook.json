@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "name": "Contract Clause Playbook",
+    "description": "Reference standards used to flag risky or non-standard clauses when extracting from NDAs/MSAs. General industry-standard positions, not legal advice.",
+    "usage": "For each extracted clause, compare its substance against 'acceptable_range' and check for any 'red_flags' patterns. If a red flag matches, surface the 'flag_reason' to the user alongside the quoted source text."
+  },
+  "termination": {
+    "clause_type": "Termination",
+    "what_it_covers": "How and when either party can end the agreement, and required notice.",
+    "acceptable_range": "Either party may terminate for convenience with 30-90 days written notice. Immediate termination allowed for material breach (with a 10-30 day cure period) or insolvency.",
+    "red_flags": [
+      {
+        "pattern": "Only one party has the right to terminate for convenience",
+        "flag_reason": "One-sided termination rights heavily favor the other party and limit your exit options."
+      },
+      {
+        "pattern": "No cure period for breach before termination",
+        "flag_reason": "Allows immediate termination for any breach, however minor, without a chance to fix it."
+      },
+      {
+        "pattern": "Notice period under 15 days or over 180 days",
+        "flag_reason": "Unusually short notice gives little transition time; unusually long notice can trap you in an unwanted deal."
+      }
+    ],
+    "example_acceptable_language": "Either Party may terminate this Agreement for convenience upon sixty (60) days' prior written notice to the other Party.",
+    "example_risky_language": "Company may terminate this Agreement at any time without notice or cause. Vendor may not terminate except for Company's material breach."
+  },
+  "auto_renewal": {
+    "clause_type": "Auto-Renewal / Renewal Term",
+    "what_it_covers": "Whether the contract automatically renews, for how long, and the deadline to opt out.",
+    "acceptable_range": "Auto-renewal for terms no longer than the original term, with opt-out notice required 30-60 days before renewal, and the renewal/opt-out deadline clearly dated or calculable.",
+    "red_flags": [
+      {
+        "pattern": "Opt-out notice window under 30 days or vaguely worded (e.g. 'reasonable notice')",
+        "flag_reason": "Short or vague opt-out windows cause missed deadlines and unwanted renewals."
+      },
+      {
+        "pattern": "Renewal term longer than the original term",
+        "flag_reason": "Locks the counterparty into an extended commitment beyond what was originally agreed."
+      },
+      {
+        "pattern": "No stated mechanism or date for renewal/termination notice",
+        "flag_reason": "Without a clear trigger date, renewal deadlines are easy to miss entirely."
+      }
+    ],
+    "example_acceptable_language": "This Agreement shall automatically renew for successive one (1) year terms unless either Party provides written notice of non-renewal at least forty-five (45) days prior to the end of the then-current term.",
+    "example_risky_language": "This Agreement renews automatically unless cancelled in advance."
+  },
+  "confidentiality": {
+    "clause_type": "Confidentiality / NDA Scope",
+    "what_it_covers": "What counts as confidential information, how long the obligation lasts, and standard carve-outs.",
+    "acceptable_range": "Clear definition of confidential information; standard carve-outs (publicly known info, independently developed info, info required to be disclosed by law); duration of 2-5 years post-termination (or indefinite only for trade secrets).",
+    "red_flags": [
+      {
+        "pattern": "No carve-outs for public/independently-developed information",
+        "flag_reason": "Without carve-outs, you could be restricted from using information you already knew or that's publicly available."
+      },
+      {
+        "pattern": "Indefinite confidentiality term applied to all information, not just trade secrets",
+        "flag_reason": "Overbroad indefinite obligations are hard to comply with and unusual outside trade-secret protection."
+      },
+      {
+        "pattern": "Definition of 'confidential information' is extremely broad or undefined",
+        "flag_reason": "Vague scope makes it unclear what's actually restricted, creating compliance risk."
+      }
+    ],
+    "example_acceptable_language": "Confidential Information excludes information that is or becomes publicly available through no fault of the receiving Party, was already known prior to disclosure, or is independently developed without use of the disclosing Party's Confidential Information. Obligations survive for three (3) years following termination.",
+    "example_risky_language": "All information shared between the Parties, in any form, shall remain confidential indefinitely, with no exceptions."
+  },
+  "indemnification": {
+    "clause_type": "Indemnification",
+    "what_it_covers": "Which party compensates the other for third-party claims, losses, or damages arising from the agreement.",
+    "acceptable_range": "Mutual indemnification tied to each party's own breach, negligence, or IP infringement. Carve-outs for gross negligence/willful misconduct are common and acceptable.",
+    "red_flags": [
+      {
+        "pattern": "One-sided indemnification (only one party indemnifies the other)",
+        "flag_reason": "Unbalanced risk allocation — you bear liability for issues that may not be your fault."
+      },
+      {
+        "pattern": "Uncapped indemnification obligation with no liability limit",
+        "flag_reason": "Creates open-ended financial exposure with no ceiling."
+      },
+      {
+        "pattern": "Indemnification covers claims unrelated to breach of this agreement",
+        "flag_reason": "Overbroad indemnification scope beyond what's reasonably tied to the contract's subject matter."
+      }
+    ],
+    "example_acceptable_language": "Each Party shall indemnify the other against third-party claims arising from such Party's breach of this Agreement, negligence, or willful misconduct, subject to the limitation of liability in Section X.",
+    "example_risky_language": "Vendor shall indemnify, defend, and hold harmless Company from any and all claims, damages, and liabilities of any kind whatsoever, without limitation."
+  },
+  "limitation_of_liability": {
+    "clause_type": "Limitation of Liability",
+    "what_it_covers": "Caps on financial liability and exclusions for certain damage types (e.g. indirect, consequential).",
+    "acceptable_range": "Liability capped at fees paid in the prior 12 months (or a similar defined cap). Mutual exclusion of indirect/consequential/punitive damages, with standard carve-outs for confidentiality breaches, IP infringement, or gross negligence.",
+    "red_flags": [
+      {
+        "pattern": "No liability cap at all, or cap applies to only one party",
+        "flag_reason": "Unlimited or one-sided liability exposure is a major financial risk."
+      },
+      {
+        "pattern": "Cap set unusually low (e.g., a flat small-dollar amount) relative to contract value",
+        "flag_reason": "A token cap may not meaningfully protect you if something goes wrong."
+      },
+      {
+        "pattern": "No mutual exclusion of consequential/indirect damages",
+        "flag_reason": "Leaves open exposure to unpredictable, potentially large indirect losses."
+      }
+    ],
+    "example_acceptable_language": "Neither Party's aggregate liability under this Agreement shall exceed the total fees paid in the twelve (12) months preceding the claim. Neither Party shall be liable for indirect, incidental, or consequential damages.",
+    "example_risky_language": "Vendor's total liability under this Agreement shall not exceed $500, regardless of the nature of the claim."
+  },
+  "governing_law": {
+    "clause_type": "Governing Law / Jurisdiction",
+    "what_it_covers": "Which state/country's law governs the contract and where disputes must be resolved.",
+    "acceptable_range": "A neutral or mutually agreeable jurisdiction; venue reasonably convenient for both parties or where the contract was substantially negotiated/performed.",
+    "red_flags": [
+      {
+        "pattern": "Jurisdiction in a location with no connection to either party and clearly favorable to only one side",
+        "flag_reason": "Forces disputes into an inconvenient or unfamiliar legal system, raising litigation cost and risk."
+      },
+      {
+        "pattern": "Mandatory arbitration clause that waives the right to jury trial or class action without explanation",
+        "flag_reason": "Significant procedural rights are being waived — worth flagging even if ultimately acceptable."
+      }
+    ],
+    "example_acceptable_language": "This Agreement shall be governed by the laws of the State of Delaware, and the Parties consent to the exclusive jurisdiction of the courts located in Delaware.",
+    "example_risky_language": "This Agreement is governed by the laws of [Country with no connection to either party], and all disputes must be resolved exclusively in that jurisdiction."
+  },
+  "payment_terms": {
+    "clause_type": "Payment Terms",
+    "what_it_covers": "Payment amounts, due dates, late fees, and invoicing requirements.",
+    "acceptable_range": "Net 30-60 payment terms; late fee of 1-1.5% per month or statutory interest rate; clear invoicing process.",
+    "red_flags": [
+      {
+        "pattern": "Payment due immediately or Net 10 or less",
+        "flag_reason": "Unusually short payment windows can strain cash flow and are non-standard for B2B contracts."
+      },
+      {
+        "pattern": "Late fee above 2% per month or uncapped compounding interest",
+        "flag_reason": "Excessive late penalties may be unenforceable in some jurisdictions and are a negotiation red flag."
+      },
+      {
+        "pattern": "No defined invoicing or dispute process for incorrect charges",
+        "flag_reason": "Leaves no clear path to contest billing errors."
+      }
+    ],
+    "example_acceptable_language": "Invoices are due within thirty (30) days of receipt. Late payments accrue interest at 1.5% per month or the maximum rate permitted by law, whichever is lower.",
+    "example_risky_language": "Payment is due immediately upon invoice. Late payments accrue interest at 5% per month, compounding."
+  }
+}
